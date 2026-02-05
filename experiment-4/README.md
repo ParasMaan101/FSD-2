@@ -1,16 +1,46 @@
-# React + Vite
+Experiment 4: State Management
+Learning Outcomes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+After completing this experiment, the student will be able to:
 
-Currently, two official plugins are available:
+1️⃣ Local State Management (useState)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Understand the concept of state in React applications.
 
-## React Compiler
+Use the useState hook to manage local component data.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Update and render UI dynamically based on state changes.
 
-## Expanding the ESLint configuration
+Handle user interactions (button click, input change) using local state.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Differentiate between props and state.
+
+2️⃣ Global State Management using Context API
+
+(CounterGlobalContextAPI)
+
+Explain the need for global state management in React.
+
+Create and use React Context for sharing state across components.
+
+Implement a global counter application using Context API.
+
+Avoid prop drilling by using Context Provider and Consumer.
+
+Access and update global state using useContext.
+
+3️⃣ Redux State Management
+
+(CounterReducer, Store)
+
+Understand the architecture of Redux (Store, Action, Reducer).
+
+Create a Redux store to manage application-wide state.
+
+Implement a counter reducer to update state based on actions.
+
+Dispatch actions to modify the Redux state.
+
+Connect React components to Redux using Provider.
+
+Compare Redux state management with Context API and local state.
