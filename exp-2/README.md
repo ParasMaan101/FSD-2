@@ -1,18 +1,29 @@
-# React + Vite
+AIM To design a responsive and interactive User Interface (UI) using Component Libraries such as Material UI and Bootstrap, and to deploy the web application on Netlify using GitHub as a version control platform.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+THEORY What is a Component Library? A component library is a collection of pre-built, reusable UI components such as buttons, forms, cards, navigation bars, modals, etc., that help developers build web applications faster and consistently.
 
-Currently, two official plugins are available:
+Instead of writing everything from scratch in HTML, CSS, and JavaScript, developers can use libraries like:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Material UI (MUI) → For React-based applications
 
-## React Compiler
+Bootstrap → For responsive web design
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Material UI (MUI) Material UI is a popular React UI framework based on Google’s Material Design principles. It provides:
 
-Note: This will impact Vite dev & build performances.
+npm -v Step: Create React App Open VS Code terminal and run: npm create vite@latest my-ui-app Choose:
 
-## Expanding the ESLint configuration
+Framework → React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Variant → JavaScript
+
+npm install npm run dev Step 3: Install Material UI Run in VS Code terminal:
+
+npm install @mui/material @emotion/react @emotion/styled Step 4: Create UI Component Create a file ButtonBasic.jsx and add:
+
+jsx Copy code import Button from "@mui/material/Button"; import TextField from "@mui/material/TextField";
+
+export default function ButtonBasic() { return ( <> Click Me </> ); } Import it in App.jsx:
+
+jsx Copy code import ButtonBasic from "./ButtonBasic";
+
+function App() { return (
